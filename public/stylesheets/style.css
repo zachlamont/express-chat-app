@@ -4,5 +4,26 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.main-header,
+.send-message-header {
+  color: #00a0e0;
+}
+.message-text {
+  background-color: #00b7ff58;
+  padding: 1em;
+  border-radius: 0.4em;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.message-timestamp {
+  font-size: small;
+  color: rgb(149, 149, 149);
+  margin-left: 1em;
+}
+.user-heading-text {
+  display: flex;
 }

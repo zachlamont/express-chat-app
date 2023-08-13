@@ -1,5 +1,19 @@
-extends layout
+// Link to your external CSS file
+link(rel="stylesheet", href="/stylesheets/style.css")
 
-block content
-  h1= title
-  p Welcome to #{title}
+h1.main-header= title
+a(href="/new")
+  button.add-message-button Add Message
+
+p.welcome-text Welcome to #{title}, here is the latest:
+
+ul.message-list
+  each message in messages
+    .message-container
+      .user-heading-text
+        p.message-user
+          strong= message.user
+        p.message-timestamp
+          em= '(' + message.added + ')'
+      p.message-text
+        | #{message.text}

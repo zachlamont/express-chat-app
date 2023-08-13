@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/stylesheets/style.css")
+  body
+    a(href="/")
+      button.return-button Take me Back
+    h1.send-message-header Send a Message:
+    form.send-message-form(method="POST", action="/new")
+      label(for="user-name") Your Name:
+      input(type="text", name="messageUser", required, id="user-name")
+
+      label(for="user-message") Your Message:
+      input(type="text", name="messageText", required, id="user-message")
+
+      button#submit-button Send
+
+      
